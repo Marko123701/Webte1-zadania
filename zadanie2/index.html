@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Formulár</title>
+</head>
+<body>
+    <div id="logo">
+        <img src="logo.png" alt="top logo" class="logo">
+    </div>
+    <div class="container">
+        <div id="airline-logo">
+            <img src="airline-logo.png" alt="airline logo" class="airline-logo">
+        </div>
+        <header>Kúpa letenky</header>
+        <form name ="contactform" id="myForm" action="https://form2mail.hynix.sk/form2mail.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm();">
+              <input type="hidden" name="apikey" value="e006af8c6ccb815260bafec4aa0d1c12">
+                <input type="hidden" name="from" value="xmatuskam3@stuba.sk">
+                <input type="hidden" name="sender" value="Zadanie 2.">
+                <input type="hidden" name="to" value="xmatuskam3@stuba.sk">
+                <input type="hidden" name="subject" value="Marko Matúška">
+                <input type="hidden" name="redirectOk" value="https://webte1.fei.stuba.sk/~xmatuskam3/zadanie2formularsecret/">
+                <input type="hidden" name="redirectFalse" value="https://webte1.fei.stuba.sk/~xmatuskam3/zadanie2formularsecret/">
+            <input type="hidden" value="Marko Matúška">
+            <div class="main-grid">
+            <div>
+                <fieldset class="f1">
+                    <legend>Osobné údaje</legend>
+                    <div class="contact-info">
+                        <div class="name-surname">
+                            <div class="name">
+                                 <label for="meno"><span class="required">*</span>Meno</label>
+                          <input type="text" name="meno" id="meno" placeholder="Janko" oninput="countText1();" onchange="checkName();" maxlength="20">
+                          <div class="count-words-div">
+                            <span id="count-words1" class="word-count"></span>
+                            <span id="required-name" class="required-span"></span>
+                          </div>
+                            </div>
+                         <div class="surname">
+                            <label for="priezvisko"><span class="required">*</span>Priezvisko</label>
+                          <input type="text" name="priezvisko" id="priezvisko" oninput="countText2();" onchange="checkSurname();" placeholder="Hraško" maxlength="20">
+                          <div class="count-words-div">
+                            <span id="count-words2" class="word-count"></span>
+                            <span id="required-surname" class="required-span"></span>
+                          </div>
+                         </div>
+                        </div>
+                        <div>
+                            <label for="datumNarodenia"><span class="required">*</span>Dátum narodenia</label>
+                          <input type="date" name="datumNarodenia" id="datumNarodenia" oninput="calcAge()">
+                          <div class="required-birth-div">
+                            <span id="required-birth" class="required-span"></span>
+                          </div>
+                        </div>
+                        <div>
+                            <label>Vek</label>
+                            <input type="number" name="vek" id="vek" onchange="checkAge();" min="1" max="115" step="1" placeholder="18">
+                          </div>
+                          <div>
+                            <label><span class="required">*</span>Pohlavie</label>
+                            <label><input type="radio" name="gender" value="Muž" onclick="showWeight();">Muž</label>
+                            <label><input type="radio" name="gender" value="Žena" onclick="showHeight();">Žena</label>
+                            <label><input type="radio" name="gender" value="Nechcem odpovedať" onclick="hideBoth();">Iné/nechcem odpovedať</label>
+                            <div class="required-gender-div">
+                            <span id="required-gender" class="required-span"></span>
+                          </div>
+                          </div>
+                          <div id="vaha">
+                            <label for="vaha-i">Váha</label>
+                            <input type="number" id="vaha-i" placeholder="Zadaj spoju váhu">
+                          </div>
+                          <div id="vyska">
+                            <label for="vyska-i">Výška</label>
+                          <input type="number" id="vyska-i" placeholder="Zadaj svoju výšku">
+                          </div>
+                          <div class="ticket-select">
+                            <div class="select_1">
+                                <select id="select_1" onchange="listener_1();" size="1">
+                                  <option value="1">Európa</option>
+                                  <option value="2">Amerika</option>
+                                </select>
+                                
+                                <select id="select_2" onchange="listener_1();" size="1">
+                                  <option value="3">Francúzsko</option>
+                                  <option value="4">Taliansko</option>
+                                </select>
+                                
+                                <select id="select_3" onchange="listener_1();" size="1">
+                                  <option value="7">Paríž</option>
+                                  <option value="8">Nice</option>
+                                </select>
+                              </div>
+                              <div><p id="price">Cena letenky: 150€</p></div>
+                        </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="payment-div">
+                <fieldset class="f2">
+                    <legend>Osobné údaje</legend>
+                    <div>
+                      <label><span class="required">*</span>Email</label>
+                      <input type="email" id="email" size="30" placeholder="xxx@gmail.com" maxlength="30" onchange="checkMail();" oninput="countText5();">
+                      <div class="required-email-div">
+                        <span id="required-email" class="required-span"></span>
+                      </div>
+                      <div>
+                          <span class="word-count" id="count-words5"></span>
+                        </div>
+                    </div>
+                    <div class="tel-div">
+                        <label>Telefónne číslo</label>
+                        <select id="countryCode">
+                            <option value="+421" Selected>Slovensko (+421)</option>
+                            <option value="+420">Česko (+420)</option>
+                            <option value="+48">Poľsko (+48)</option>
+                            <option value="+36">Maďarsko (+36)</option>
+                            <option value="+43">Rakúsko (+43)</option>
+                        </select>
+                        <input id="phone" type="tel" placeholder="915xxxxxx" maxlength="9" onchange="checkPhone();" oninput="countText4();" >
+                        <div class="required-email-div">
+                          <span class="word-count" id="count-words4"></span>
+                          <span id="check-phone" class="required-span"></span>
+                        </div>
+                    </div>
+                    <div class="check-div">
+                        <p>Vyberte veľkosť kufra</p>
+                        <input type="checkbox" class="check" onclick="onlyOne(this)" value="S(20-40 litrov)" checked>S(20-40 litrov)
+                        <input type="checkbox" class="check" onclick="onlyOne(this)" value="M(60-90 litrov)">M(60-90 litrov)
+                        <input type="checkbox" class="check" onclick="onlyOne(this)" id="other">Iné
+                        <input type="number" id="other-text" placeholder="Zadaj veľkosť kufra" onchange="otherValue();">    
+                    </div>
+                    <div>
+                        <input type="checkbox" id="note" onclick="deleteNote();"> Poznámka
+                        <textarea id="txtnote" oninput="countText3();" cols="25" rows="8" maxlength="100" placeholder="Ak máš nejakú pripomienku, napíš nám ju"></textarea>
+                        <span class="word-count" id="count-words3"></span>
+                    </div>
+                  </fieldset>
+          </div>
+        </div>
+        </form>
+        <div>
+            <button class="myBtn" onclick="openModal();">Skontroluj</button>
+        </div>  
+            <div id="myModal" class="modal">
+            </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>

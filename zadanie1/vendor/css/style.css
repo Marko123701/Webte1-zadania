@@ -1,0 +1,347 @@
+html{
+    background-color: #F8F6F9;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../../fonts/Roboto-Regular.ttf);
+}
+@media (max-width: 700px) {
+  .desktop-only-br{display:none}
+  .content{
+    flex-direction: column;
+  }
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer {
+  padding-top: 20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 1.5rem;
+  background: rgb(51, 51, 51);
+  color: white;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+p{
+    font-size: 15px;
+}
+
+#h2{
+    padding-top: 20px;
+    clear: left;
+}
+
+.pic-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa {
+    margin-left: 20px;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    }
+  
+  .fa:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+ 
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+#p1 {
+    clear: left;
+    
+}
+#p2{
+    margin-left: 0px; 
+}
+h1,h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-h1 {
+    box-sizing: border-box;
+    color: rgb(17, 17, 17);
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.blue-h2 {
+    margin-top: 20px;
+    box-sizing: border-box;
+    color: rgb(10,128,240);
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+abbr{
+    text-decoration: underline;
+}
+
+aside {
+  margin-top: -6px;
+  margin-bottom: 10px;
+}
+
+.cite {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 120%;
+    background: #f9f9f9;
+    border: 2px solid #ccc;
+    padding-right: 2%;
+    display: inline;
+}
+
+.prof-pic{
+    border-radius: 50%;
+    height: 180px; 
+    width: 200px;
+}
+
+.STU-pic{
+    width: 30%;
+    height: 25%;
+    float: left;
+    margin-right: 10px;
+    clear:both;
+}
+
+.author-pic{
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+
+
+.top-nav{
+  text-align: center;
+}
+.top-nav ul{
+  padding: 0;
+}
+
+.top-nav li{
+    vertical-align: top;
+    display: inline-block;
+    margin: auto;
+}
+
+.top-nav a {
+    text-decoration: none;
+    background-color: rgb(51, 51, 51);
+    color:white;
+    display: block;
+    border: 2px solid;
+    border-color: rgb(4, 170, 109);
+    min-width: 100px;
+    max-width: 120px;
+}
+/* cv */
+
+.content{
+  display: flex;  
+  margin-left : auto;
+  margin-right : auto;
+  margin-bottom: 10px;
+}
+
+article.lavy{
+  align-content: top;
+  background-color: #638880;
+  padding : 0px 5px 0px 5px;
+  margin : 0 5px;        
+}
+
+article.pravy{
+  background-color: #30CBA1;
+  padding : 0px 5px 0px 5px;
+  margin : 0 5px ;     
+}
+
+
+.profile-pic {
+  width: auto;
+  max-width: 250px;
+  height: auto;
+  max-height: 200px;
+  margin-left: -5px;
+}
+
+.cv-ul ul{
+  list-style: none;
+}
+.cv-ul li{
+  font-size: 0.8em;
+}
+
+/*table*/
+table, th, td {
+  border: 1px solid;
+}
+
+.prvy-stlpec {
+  background-color: rgb(106, 106, 106);
+}
+
+tr:nth-of-type(even){
+  background-color: #F8F6F9;
+}
+tr:nth-of-type(odd){
+  background-color:#ddd;
+}
+
+th{
+  background-color: #FA5345;
+}
+.cvicenie {
+  background-color: #638880;
+}
+
+.prednaska {
+  background-color: #30CBA1;
+}
+
+.interactive-picture{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.schedule-div{
+  overflow-x:auto;
+}
+
+.index-section{
+  width: 75%;
+}
+
+.Legend div{
+  margin-left:15px;
+  width:16px;
+  border:1px solid #808080;
+  display:inline-block;
+  margin-top: 10px;
+}
+.ie7 .Legend div{
+  display:inline;
+  zoom:1;
+}
+
+/*image*/
+
+.image-div{
+  max-width: 100%;
+  position: relative;
+}
+
+.hoverable{
+  position: absolute;
+  border:2px solid red;
+  width: 12%;
+  height: 40%;
+}
+.pin{
+  position: absolute;
+  width: 250%;
+  height: 150%;
+  top: -130%;
+  right: -200%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s linear, visibility 0.3s linear;  
+  background: grey;
+  border:2px solid rgb(64, 64, 64);
+  z-index: 1
+}
+
+.pin > h6{
+  font-size: 1vw;
+}
+
+.pin > p {
+  font-size: 1vw;
+  color: white;
+}
+
+.hoverable:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+#walter {
+  top: 0;
+  left: 16%;
+}
+
+#jesse {
+  top: 0;
+  left: 34.5%;
+}
+
+#skyler {
+  top: 0;
+  left: 53.5%;
+}
+
+#gus {
+  top: 0;
+  left: 72%;
+}
+
+#saul {
+  top: 50%;
+  left: 16%;
+}
+
+#hank {
+  top: 50%;
+  left: 34.5%;
+}
+
+#marie {
+  top: 50%;
+  left: 53.5%;
+}
+
+#mike {
+  top: 50%;
+  left: 72%;
+}

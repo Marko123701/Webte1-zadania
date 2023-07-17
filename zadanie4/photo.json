@@ -1,0 +1,133 @@
+[
+    {
+        "fileId": "1",
+        "nameOfPicture": "Hrad",
+        "description": "Bratislavský Hrad",
+        "date": "8.8.2022",
+        "gps": {
+            "x": "48.142383",
+            "y": "17.099869"
+        },
+        "filePath": "fotky/BA1.jpg"
+    },
+    {
+        "fileId": "2",
+        "nameOfPicture": "Divadlo",
+        "description": "Bratislavské divadlo",
+        "date": "9.8.2022",
+        "gps": {
+            "x": "48.141171",
+            "y": "17.123477"
+        },
+        "filePath": "fotky/BA2.jpg"
+    },
+    {
+        "fileId": "3",
+        "nameOfPicture": "Čumil",
+        "description": "Socha Čumila",
+        "date": "12.9.2022",
+        "gps": {
+            "x": "48.142875",
+            "y": "17.108859"
+        },
+        "filePath": "fotky/BA3.jpg"
+    },
+    {
+        "fileId": "4",
+        "nameOfPicture": "Námestie",
+        "description": "Námestie v Banskej Bystrici",
+        "date": "13.7.2022",
+        "gps": {
+            "x": "48.736397",
+            "y": "19.146798"
+        },
+        "filePath": "fotky/BB1.jpg"
+    },
+    {
+        "fileId": "5",
+        "nameOfPicture": "Budova",
+        "description": "Budova v Banskej Bystrici",
+        "date": "13.7.2022",
+        "gps": {
+            "x": "48.737092",
+            "y": "19.148695"
+        },
+        "filePath": "fotky/BB2.jpg"
+    },
+    {
+        "fileId": "6",
+        "nameOfPicture": "Múzeum",
+        "description": "Múzeum v Banskej Bystrici",
+        "date": "14.7.2022",
+        "gps": {
+            "x": "48.738622",
+            "y": "19.150934"
+        },
+        "filePath": "fotky/BB3.jpg"
+    },
+    {
+        "fileId": "7",
+        "nameOfPicture": "Kostol",
+        "description": "Kostol v Lučenci",
+        "date": "15.4.2021",
+        "gps": {
+            "x": "48.328491",
+            "y": "19.669515"
+        },
+        "filePath": "fotky/LC1.jpg"
+    },
+    {
+        "fileId": "8",
+        "nameOfPicture": "Synagoga",
+        "description": "Synagoga v Lučenci",
+        "date": "14.7.2021",
+        "gps": {
+            "x": "48.325051",
+            "y": "19.667079"
+        },
+        "filePath": "fotky/LC2.jpg"
+    },
+    {
+        "fileId": "9",
+        "nameOfPicture": "Zámok",
+        "description": "Zámok v Haliči",
+        "date": "15.7.2021",
+        "gps": {
+            "x": "48.356730",
+            "y": "19.575487"
+        },
+        "filePath": "fotky/LC3.jpg"
+    },{
+        "fileId": "10",
+        "nameOfPicture": "Hrad",
+        "description": "Hrad v Trenčíne",
+        "date": "18.9.2021",
+        "gps": {
+            "x": "48.894529",
+            "y": "18.045083"
+        },
+        "filePath": "fotky/TR1.jpg"
+    },
+    {
+        "fileId": "11",
+        "nameOfPicture": "Námestie",
+        "description": "Námestie v Trenčíne",
+        "date": "30.9.2021",
+        "gps": {
+            "x": "48.893858",
+            "y": "18.042345"
+        },
+        "filePath": "fotky/TR2.jpg"
+    },
+    {
+        "fileId": "12",
+        "nameOfPicture": "Námestie",
+        "description": "Námestie v Trenčíne",
+        "date": "31.9.2021",
+        "gps": {
+            "x": "48.892767",
+            "y": "18.038663"
+        },
+        "filePath": "fotky/TR3.jpg"
+    }
+]
